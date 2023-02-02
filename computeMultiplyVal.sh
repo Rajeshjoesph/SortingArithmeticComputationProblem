@@ -8,9 +8,7 @@ echo "Value Of a is $a"
 echo "Value Of b is $b"
 echo "Value Of c is $c"
 printf "\n"
-compute=$(( $a + $b * $c ))
+compute=$(( $a * $b + $c ))
 
-echo "Calculation of a+b*c is $compute"
-
-
+echo "Calculation of a*b+c is $compute"
 
