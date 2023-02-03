@@ -8,7 +8,16 @@ echo "Value Of a is $a"
 echo "Value Of b is $b"
 echo "Value Of c is $c"
 printf "\n"
-compute=$(( $a % $b * $c ))
+compute1=$(( $a + $b * $c ))
+compute2=$(( $a * $b + $c ))
+compute3=$(( $c + $b / $b ))
+compute4=$(( $a % $b + $c ))
 
-echo "Calculation of a%b*c is $compute"
+declare -A result
 
+result[1]="$compute1"
+result[2]="$compute2"
+result[3]="$compute3"
+result[4]="$compute4"
+
+echo "Store In Dictionary: "${result[@]}
