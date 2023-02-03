@@ -23,8 +23,9 @@ array=($counter)
 data=${array[*]}
 echo  $data
 echo "-----------------------------------------------"
-echo "Array in Descending Order: "
-for i in $(echo "$data" | tr ' ' '\n' | sort -nr)
+echo "Array in Ascending Order: "
+for i in $(echo "$data" | tr ' ' '\n' | sort -n)
 do
-	echo $i
+        echo $i
 done
+
