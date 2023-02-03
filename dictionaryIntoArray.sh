@@ -14,10 +14,15 @@ compute3=$(( $c + $b / $b ))
 compute4=$(( $a % $b + $c ))
 
 declare -A result
-
 result[1]="$compute1"
 result[2]="$compute2"
 result[3]="$compute3"
 result[4]="$compute4"
 
 echo "Store In Dictionary: "${result[@]}
+
+counter=${result[*]}
+array=($counter)
+printf "\n"
+echo "Value from Dictionary Into Array: " ${array[*]}
+
