@@ -8,7 +8,7 @@ echo "Value Of a is $a"
 echo "Value Of b is $b"
 echo "Value Of c is $c"
 printf "\n"
-compute=$(( $c + $a / $b ))
+compute=$(( $a % $b * $c ))
 
-echo "Calculation of c+a/b is $compute"
+echo "Calculation of a%b*c is $compute"
 
